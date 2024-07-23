@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  /* background-color: white; */
+  /*  */
+  /* Update the path to your image */
+  width: 100%;
+}
+
+.add-product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/src/assets/addproduct.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 300px;
+}
+
+.add-product-box {
+  background: rgba(148, 207, 246, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(244, 245, 244, 0.941);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #c37c7c;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  background-color: hsl(210, 80%, 73%);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.upload-button,
+.add-button,
+.back-button {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .add-product-box {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

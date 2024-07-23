@@ -6,7 +6,6 @@
 
 html,
 body {
-  background-image: url("/src//assets/image.png");
   height: 100%;
   font-family: Arial, sans-serif;
   background-color: antiquewhite;
@@ -17,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  /* background-image: url("/mnt/data/image.png"); Update the path to your image */
+  background-image: url("/src//assets/image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

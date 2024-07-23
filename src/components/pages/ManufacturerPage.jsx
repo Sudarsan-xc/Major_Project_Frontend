@@ -9,6 +9,10 @@ function ManufacturerPage() {
     navigate("/login");
   };
 
+  const handleAddProduct = () => {
+    navigate("/add-product");
+  };
+
   return (
     <div className="manufacturer-container">
       <div className="manufacturer-box">
@@ -21,7 +25,7 @@ function ManufacturerPage() {
         <h2>Manufacturer</h2>
         <div className="buttons">
           <button>Check Profile</button>
-          <button>Add Product</button>
+          <button onClick={handleAddProduct}>Add Product</button>
           <button>Connect Wallet</button>
         </div>
       </div>

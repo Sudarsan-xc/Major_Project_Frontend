@@ -8,7 +8,7 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (username === "m" && password === "p") {
+    if (username === "manufacturer" && password === "password") {
       navigate("/manufacturer");
     } else {
       alert("Invalid credentials");
@@ -17,11 +17,8 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-      <h1>Welcome To Login Page</h1>
       <div className="login-box">
-        <h1>
-          <strong>Login</strong>
-        </h1>
+        <h2>Login</h2>
         <input
           type="text"
           placeholder="Username"
